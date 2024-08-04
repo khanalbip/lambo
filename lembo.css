@@ -1,0 +1,355 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=M+PLUS+1p&family=Rubik:ital,wght@0,300..900;1,300..900&family=Tilt+Neon&display=swap');
+@font-face{
+    font-family: le;
+    src:url(le.ttf)
+}
+@font-face{
+    font-family: le1;
+    src:url(le1.ttf)
+}
+@font-face{
+    font-family: le2;
+    src:url(le2.otf)
+}
+@font-face{
+    font-family: sweet;
+    src:url(sweet.ttf)
+}
+@font-face{
+    font-family: moon;
+    src:url(moon.otf)
+}
+@font-face{
+    font-family: tabi;
+    src:url(tabitha.otf)
+}
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=M+PLUS+1p&family=Rubik:ital,wght@0,300..900;1,300..900&family=Tilt+Neon&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Lato', sans-serif;
+    color: white;
+    font-size: 50px;
+    /* cursor: pointer; */
+    background-color: #0e0d0d;
+}
+
+
+
+/* 
+.slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.slide:nth-child(1) .panel > * {
+    background: #3f1e4d;
+    color: #fff;
+}
+
+.slide:nth-child(2) .panel > * {
+    background: orange;
+    color: #fff;
+}
+
+.slide:nth-child(3) .panel > * {
+    background: deepskyblue;
+    color: #fff;
+}
+
+.slide .panel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.slide .top, .slide .bottom {
+    content: attr(data-back);
+    position: absolute;
+    font-size: 30vh;
+    font-weight: 800;
+    height: 50vh;
+    width: 100vw;
+    text-align: center;
+    z-index: 1;
+    overflow: hidden;
+    box-sizing: border-box;
+    transition: transform 600ms cubic-bezier(1, 0.005, 0.57, 0.865);
+}
+
+.slide .top:after, .slide .bottom:after {
+    position: relative;
+    display: inline-block;
+    transition: transform 600ms cubic-bezier(1, 0.005, 0.57, 0.865);
+    content: attr(data-back);
+    font-family: 'Tilt Neon', sans-serif;
+}
+
+.slide .top {
+    line-height: 100vh;
+    transform: translateY(-50vh);
+}
+
+.slide .top:after {
+    transform: translateY(50vh);
+}
+
+.slide .bottom {
+    bottom: 0;
+    line-height: 0vh;
+    transform: translateY(50vh);
+}
+
+.slide .bottom:after {
+    transform: translateY(-50vh);
+}
+
+.slide.active .top, .slide.active .bottom {
+    transition: none;
+    transform: translateY(0);
+    z-index: -1;
+}
+
+.slide.active .top:after, .slide.active .bottom:after {
+    transition: transform cubic-bezier(0.23, 1, 0.32, 1) 1200ms;
+    transform: translateY(0);
+} 
+
+.lembovid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+} */
+
+.lembovid video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Use 'contain' or 'fill' as needed */
+}
+
+/* Reset styles for body to ensure no default margin/padding */
+/* body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    
+} */
+
+/* General container for the navigation bar and video */
+.nava {
+    /* position: relative; */
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.page {
+    opacity: 0.1; /* 90% transparent */
+    position: fixed;
+    border-radius: 50%;
+    display: flex;
+    z-index: 199;
+    height: 4.5vw;
+    width: 4.5vw;
+    transform: translate(-50%, -50%);
+    background-color: gold;
+}
+
+
+.lembovid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.lembovid video {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.nav1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: red; */
+    width: 100%;
+    position: absolute;
+    height: 13vh; 
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.nav1 span {
+    font-weight: 1000;
+    font-size: 2.6vw; 
+    font-family: 'le', sans-serif; 
+    color: white;
+}
+
+.nav1 a img {
+    height: 7vh;
+    width: 4vw;
+}
+
+
+.lembotext{
+    margin-top: 25vh;
+    margin-left: 3vw;
+    position: relative;
+    font-size: 7vh;
+  font-weight: 100000px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #fffd;
+}
+.lembotext1{
+    margin-top: 4vh;
+    margin-left: 4vw;
+    position: relative;
+    font-size: 15vh;
+  font-weight: 100000px;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #fffd;
+}
+.lembotext1 .spa1{
+    margin-top: 4vh;
+    /* margin-left: 13vw; */
+    position: relative;
+    font-size: 15vh;
+  font-weight: 100000px;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #fffd;
+}
+
+
+.marq{
+    font-size: 10vw;
+    font-family: le2 , sans-serif;
+}
+.marq span marquee span{
+    font-size: 10vw;
+    font-family: le1 , sans-serif;
+}
+
+
+.slogon{
+    font-family: sweet ,sans-serif;
+    margin-top: 10vh;
+    justify-content: center;
+    text-align: center;
+    font-size: 10vh;
+    font-weight: 300;
+}
+.slogon p{
+    margin-top: 4vh;
+    margin-left: 12vw;
+    margin-right: 12vh;
+    font-size: 7vh;
+    font-family: moon , system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.imagea{
+   overflow-x: hidden;
+    justify-content: space-evenly;
+    display: flex;
+    height: 90vh;
+width: 100%vh;
+}
+.imagea .image{
+    object-fit: cover;
+    margin-left: 2vw;
+height: 88vh;
+width: 80vh;
+border-radius: 10px;
+}
+
+.infolam{
+    margin-top: 8vh;
+    /* overflow: hidden; */
+    /* background-color: red; */
+    font-size: 2vw;
+    /* justify-content: space-between; */
+    display: flex;
+    width: 98vw;
+    font-family: tabi;
+}
+.infolam .infolam1{
+    margin-left: 4vw;
+    width: 37vw;
+    margin-top: 3vh;
+    justify-content: center;
+    text-align: center;
+}
+.infolam .infolam1 h2{
+    font-size: 8.3vh;
+}
+.infolam .infolam1 p{
+    margin-top: 2vh;
+    font-size: 6;
+}
+.infovi{
+    border-radius: 10px;
+    margin-left: 6.6vw;
+    width: 40vw;
+}
+
+
+.infolams{
+    margin-top: 8vh;
+    /* overflow: hidden; */
+    /* background-color: red; */
+    font-size: 2vw;
+    /* justify-content: space-between; */
+    display: flex;
+    width: 98vw;
+    font-family: tabi;
+}
+.infolams .infolams1{
+    margin-left: 13vw;
+    width: 37vw;
+    margin-top: 3vh;
+    justify-content: center;
+    text-align: center;
+}
+.infolams .infolams1 h2{
+    font-size: 8.3vh;
+}
+.infolams .infolams1 p{
+    margin-top: 2vh;
+    font-size: 6;
+}
+.infovis{
+    border-radius: 10px;
+    margin-left: 3vw;
+    width: 40vw;
+}
+
+
